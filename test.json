@@ -1,0 +1,39 @@
+{
+  "intents": {
+    "-NgEY8vUIT-sKf3UiNjB": {
+      "pattern": [
+        "halo",
+        "hai",
+        "hi",
+        "Salam",
+        "Asalamamu 'alaikum",
+        "permisi"
+      ],
+      "responses": [
+        "Halo! Ada yang bisa saya bantu hari ini?",
+        "Selamat datang kembali! Apa yang ingin Anda bicarakan hari ini?",
+        "Hai! Bagaimana saya bisa membantu Anda hari ini?"
+      ],
+      "tag": "greetings"
+    },
+    "-NgEYLTKSVKgGU7wyVXM": {
+      "pattern": [
+        "sampai jumpa",
+        "Sampai nanti",
+        "Selamat tinggal",
+        "Saya pergi",
+        "Semoga harimu menyenangkan",
+        "bye",
+        "Cao",
+        "sampai jumpa lagi",
+        "terima kasih"
+      ],
+      "responses": [
+        "Sedih melihatmu pergi :(",
+        "Sampai jumpa nanti",
+        "Selamat tinggal!"
+      ],
+      "tag": "goodbye"
+    }
+  }
+}

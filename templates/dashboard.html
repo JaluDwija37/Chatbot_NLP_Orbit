@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% block dashboard %}
+<!-- End Navbar -->
+<div class="container-fluid py-4">
+  <div class="container">
+    <div class="">
+      <!-- Modal trigger button -->
+      <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+        Tambah Knowledge
+      </button>
+
+      <!-- Modal Body -->
+      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+      <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+        role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered " role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitleId">Tambah Knowledge</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="/insert_data">
+                <div class="form-group">
+                  <label for="tag">add Tag:</label>
+                  <input type="text" class="form-control" id="tag" name="tag" required>
+                </div>
+                <div class="form-group">
+                  <label for="pattern">add pattern:</label>
+                  <textarea class="form-control" id="pattern" name="pattern" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="responses">add responses:</label>
+                  <textarea class="form-control" id="responses" name="responses"" rows=" 4"></textarea>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-success">Tambah</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="table table-light table-striped">
+        <tr style="text-align: center;">
+          <th>ID</th>
+          <th>Tag</th>
+          <th>Patterns</th>
+          <th>Responses</th>
+          <th>Options</th>
+        </tr>
+        {% for intent in intent_data %}
+        <tr>
+          <td>{{ intent.key }}</td>
+          <td>{{ intent.tag }}</td>
+          <td class="text-wrap">
+            <ul>
+              {% for pattern in intent.patterns %}
+              <li>{{ pattern }}</li>
+              {% endfor %}
+            </ul>
+          </td>
+          <td class="text-wrap"> <!-- Apply word-wrap to this cell -->
+            <ul>
+              {% for response in intent.responses %}
+              <li>{{ response }}</li>
+              {% endfor %}
+            </ul>
+          </td>
+          <td>
+            <!-- Add an "Edit" button to trigger the modal -->
+            <button type="button" class="btn btn-warning edit-btn" data-toggle="modal"
+              data-target="#editModal">Edit</button>
+
+            <form action="/delete_data" method="post">
+              <input type="hidden" name="delete_tag" value="{{ intent.tag }}">
+              <button class="btn btn-danger" type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+    <!-- Create a modal for editing data with a form in the body -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalLabel">Edit Data</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Create a form for editing data -->
+            <form id="editForm" method="POST" action="/update_data">
+              <div class="form-group">
+                <label for="tagInput">Tag</label>
+                <input type="text" class="form-control" id="tagInput" name="tag">
+              </div>
+              <div class="form-group">
+                <label for="patternsInput">Patterns</label>
+                <textarea class="form-control" id="patternsInput" name="patterns" rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="responsesInput">Responses</label>
+                <textarea class="form-control" id="responsesInput" name="responses" rows="4"></textarea>
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" id="saveChangesBtn">Save Changes</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script>
+      // Add a click event handler for the "Edit" button
+      $('.edit-btn').on('click', function () {
+        var row = $(this).closest('tr');
+        var tag = row.find('td:nth-child(2)').text();
+        var patterns = row.find('td:nth-child(3) ul li').map(function () {
+          return $(this).text();
+        }).get().join(';'); // Join patterns with ';'
+        var responses = row.find('td:nth-child(4) ul li').map(function () {
+          return $(this).text();
+        }).get().join(';'); // Join responses with ';'
+
+        // Populate the form fields
+        $('#tagInput').val(tag);
+        $('#patternsInput').val(patterns);
+        $('#responsesInput').val(responses);
+      });
+    </script>
+
+  </div>
+</div>
+{% endblock %}

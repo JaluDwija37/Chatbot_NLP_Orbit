@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{%block chatbot%}
+<!-- Chatbot Body -->
+<div class="chatbot-body">
+  <div class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title"><i class="fas fa-robot"></i> ChatBot <i class="fas fa-robot"></i></div>
+    </header>
+    <main class="msger-chat" style="max-height: 800px; overflow-y: auto;">
+      <div class="msg left-msg">
+        <div class="msg-img"
+          style="background-image: url({{ url_for('static', filename='assets/images/kadekbot.png') }})"></div>
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Orbit Care</div>
+          </div>
+
+          <div class="msg-text">
+            Selamat datang di Orbit Care! Ada yang bisa saya bantu? 😊
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <form class="msger-inputarea" method="POST" action="/ask" id="myForm">
+      <input type="text" class="msger-input" placeholder="Masukan Pertanyaanmu...." id="user_question"
+        name="user_question">
+      <button type="submit" class="msger-send-btn">Send</button>
+    </form>
+  </div>
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Orbit Academy</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/images/favicon.png') }}" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbox.css') }}">
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"> <img style="width: 40%; padding-bottom: 4px;"
+                    src="{{ url_for('static', filename='assets/images/logoChatbot.png') }}" alt=""></a>
+            <a class="btn btn-primary" href="/admin">Admin</a>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center text-white">
+                        <!-- Page heading-->
+                        <h1 class="mb-5">Chatbot Customer Service</h1>
+                        <p>Selamat datang di masa depan layanan pelanggan! Teknologi chatbot terbaru kami hadir untuk
+                            merevolusi pengalaman dukungan pelanggan bisnis Anda. Dengan chatbot cerdas kami di tangan
+                            Anda, Anda dapat meningkatkan layanan pelanggan Anda dengan cara yang tidak pernah Anda
+                            bayangkan sebelumnya.</p>
+                        <h5>Siap untuk memulai? Ayo mengobrol!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Icons Grid-->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i class="bi-clock m-auto text-primary"></i></div>
+                        <h3>24/7</h3>
+                        <p class="lead mb-0">ChatBot selalu tersedia 24 jam setiap hari.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i class="bi-wallet2 m-auto text-primary"></i></div>
+                        <h3>Murah</h3>
+                        <p class="lead mb-0">Mengurangi biaya layanan pelanggan dengan menggantikan staf manusia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div class="features-icons-icon d-flex"><i class="bi-lightning m-auto text-primary"></i></div>
+                        <h3>Cepat</h3>
+                        <p class="lead mb-0">Memberikan tanggapan pelanggan secara instan, sehingga dapat meningkatkan
+                            kepuasan pelanggan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Image Showcases-->
+    <section class="showcase">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('{{ url_for('static', filename='assets/images/happy.jpeg') }}')">
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>Peningkatan Kepuasan Pelanggan</h2>
+                    <p class="lead mb-0">Chatbot AI dapat meningkatkan kepuasan pelanggan dengan jawaban yang akurat dan
+                        memberikan solusi segera untuk pertanyaan atau masalah mereka</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 text-white showcase-img"
+                    style="background-image: url('{{ url_for('static', filename='assets/images/watch.jpg') }}')">
+                </div>
+                <div class="col-lg-6 my-auto showcase-text">
+                    <h2>Kemampuan Beroperasi 24 jam</h2>
+                    <p class="lead mb-0">Chatbot AI dapat memberikan layanan pelanggan yang tersedia sepanjang waktu
+                        tanpa perlu istirahat, sehingga dapat meningkatkan kepuasan pelanggan yang menginginkan respons
+                        cepat.</p>
+                </div>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img"
+                    style="background-image: url('{{ url_for('static', filename='assets/images/write.jpg') }}')">
+                </div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>Pemahaman Konteks</h2>
+                    <p class="lead mb-0">Chatbot AI yang menggunakan NLP dapat lebih baik dalam memahami konteks dan
+                        maksud dari pertanyaan pelanggan, sehingga dapat memberikan respons yang lebih relevan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials-->
+    <section class="testimonials text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">Para Anggota SM-4</h2>
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="{{ url_for('static', filename='assets/images/alif.jpg') }}" alt="...">
+                        <h5>Alif Naufal Maulana</h5>
+                        <p class="font-weight-light mb-0">Front-End Developer | Dashboard</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="{{ url_for('static', filename='assets/images/amaliya2.png') }}" alt="...">
+                        <h5>Siti Amaliya Mufadlilah</h5>
+                        <p class="font-weight-light mb-0">Front-End Developer | Landing Page</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="{{ url_for('static', filename='assets/images/jalu.jpg') }}" alt="...">
+                        <h5>Adecya Jalu Mahadwija</h5>
+                        <p class="font-weight-light mb-0">Back-End Developer | AI Model & CRUD</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="{{ url_for('static', filename='assets/images/anam.png') }}" alt="...">
+                        <h5>Sakhiyul Anam</h5>
+                        <p class="font-weight-light mb-0">Data Researcher</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3"
+                            src="{{ url_for('static', filename='assets/images/shafilana.jpg') }}" alt="...">
+                        <h5>Shafilana Fadya Putri A.</h5>
+                        <p class="font-weight-light mb-0">Data Researcher</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action-->
+    <section class="call-to-action text-white text-center" id="signup">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <h2 class="mb-4">Tentang Projek Kami</h2>
+                    <p>Proyek ini merupakan proyek yang berfungsi untuk membantu dalam pelayanan customer service
+                        pelanggan. Dengan adanya Chatbot ini diharapkan pelanggan bisa mendapatkan pelayanan 24 jam
+                        penuh. Proyek ini dikembangkan dengan teknologi Artificial Intelligence dengan domain Natural
+                        Language Processing, Chatbot akan menganalisa bahasa alami dan akan menjawab dengan bahasa yang
+                        mudah dipahami oleh pelanggan. Metode atau algoritma yang digunakan adalah Neural Network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="msger">
+        <div class="chatbox">
+            <div class="chat-header" id="chat-toggle" data-toggle="collapse" data-target="#msger-chat"
+                aria-expanded="false" style="cursor: pointer;">
+                <h3>Live Chat</h3>
+            </div>
+            <main class="msger-chat collapse" id="msger-chat" style="max-height: 300px; overflow-y: auto;">
+                <div class="msg left-msg">
+                    <div class="msg-img"
+                        style="background-image: url({{ url_for('static', filename='assets/images/kadekbot.png') }})">
+                    </div>
+                    <div class="msg-bubble">
+                        <div class="msg-info">
+                            <div class="msg-info-name">Orbit Care</div>
+                        </div>
+                        <div class="msg-text">
+                            Selamat datang di Orbit Care! Ada yang bisa saya bantu? 😊
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <form class="msger-inputarea collapse" id="msger-form" method="POST" action="/ask" id="myForm">
+                <input type="text" class="msger-input" placeholder="Masukan Pertanyaanmu...." id="user_question"
+                    name="user_question">
+                <button type="submit" class="msger-send-btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#!">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#chat-toggle').click(function () {
+                $('#msger-chat').collapse('toggle');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#chat-toggle').click(function () {
+                $('#msger-form').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": [
+                "halo",
+                "hai",
+                "hi",
+                "Salam",
+                "Asalamamu 'alaikum",
+                "permisi"
+            ],
+            "responses": [
+                "Halo! Ada yang bisa saya bantu hari ini?",
+                "Selamat datang kembali! Apa yang ingin Anda bicarakan hari ini?",
+                "Hai! Bagaimana saya bisa membantu Anda hari ini?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "sampai jumpa",
+                "Sampai nanti",
+                "Selamat tinggal",
+                "Saya pergi",
+                "Semoga harimu menyenangkan",
+                "bye",
+                "Cao",
+                "sampai jumpa lagi",
+                "terima kasih"
+            ],
+            "responses": [
+                "Sedih melihatmu pergi :(",
+                "Sampai jumpa nanti",
+                "Selamat tinggal!"
+            ]
+        },
+        {
+            "tag": "morning_greet",
+            "patterns": [
+                "pagi",
+                "Selamat pagi",
+                "good morning"
+            ],
+            "responses": [
+                "Selamat pagi! Apa kabar hari ini? Bagaimana saya bisa membantu Anda hari ini?"
+            ]
+        },
+        {
+            "tag": "afternoon_greet",
+            "patterns": [
+                "siang",
+                "Selamat siang",
+                "good afternoon"
+            ],
+            "responses": [
+                "Selamat siang! Apa kabar hari ini? Bagaimana saya bisa membantu Anda hari ini?"
+            ]
+        },
+        {
+            "tag": "evening_greet",
+            "patterns": [
+                "sore",
+                "Selamat sore",
+                "good evening"
+            ],
+            "responses": [
+                "Selamat sore! Apa kabar hari ini? Bagaimana saya bisa membantu Anda hari ini?"
+            ]
+        },
+        {
+            "tag": "description",
+            "patterns": [
+                "Apa yang dimaksud dengan Orbit Kampus?",
+                "Orbit Kampus",
+                "Apakah Orbit Kampus terbuka untuk semua mahasiswa?",
+                "Berapa jumlah kuota yang tersedia untuk mahasiswa dalam program Orbit Kampus?",
+                "Kuota"
+            ],
+            "responses": [
+                "Orbit Future Academy (OFA) telah mengembangkan program Studi Independen yang dinamakan Orbit Kampus untuk mendukung inisiatif Kampus Merdeka 5. Program Orbit Kampus ini terbuka bagi semua mahasiswa dari berbagai program studi dengan kuota sebanyak 6000 orang."
+            ]
+        },
+        {
+            "tag": "non_it",
+            "patterns": [
+                "Apakah mahasiswa non-IT bisa mengikuti program?",
+                "non IT",
+                "bukan mahasiswa IT"
+            ],
+            "responses": [
+                "Program ini dirancang untuk semua mahasiswa, termasuk mereka yang bukan dari latar belakang IT, sehingga mahasiswa non-IT tidak perlu khawatir tentang materi yang akan diajarkan. Materi akan diajarkan dari tingkat dasar agar mudah dipahami, dan coach kami memiliki pengalaman dalam mengajar mahasiswa non-IT sehingga Anda akan mendapatkan dukungan yang Anda butuhkan untuk berhasil dalam program ini. Jadi, sangat dianjurkan bagi mahasiswa non-IT untuk mengikuti program ini dan memanfaatkan kesempatan untuk meningkatkan pengetahuan dan keterampilan di bidang IT."
+            ]
+        },
+        {
+            "tag": "requirement",
+            "patterns": [
+                "Apakah ada syarat khusus untuk mengikuti program?",
+                "syarat"
+            ],
+            "responses": [
+                "Untuk dapat mengikuti program Orbit Kampus 'AI 4 Jobs', ada beberapa persyaratan yang perlu dipenuhi. Pertama, Anda perlu memiliki laptop atau komputer dengan spesifikasi minimal, termasuk chipset Intel i3 atau Ryzen 3, RAM 4GB, dan storage 500GB, serta dilengkapi dengan webcam, speaker, dan microphone. Kedua, pastikan Anda memiliki koneksi internet yang stabil. Selanjutnya, siapkan dokumen SPTJM dan SurKom sesuai format yang ditentukan, dan unggahnya ke platform MSIB. Hanya mahasiswa semester 4 hingga 7 dari perguruan tinggi di bawah Kemendikbudristek dengan IPK minimum 2.9 dari prodi atau jurusan apapun yang memenuhi syarat. Daftarkan diri Anda di platform MSIB dan pilih mitra 'Orbit Kampus 'AI 4 Jobs’. Terakhir, Anda juga perlu lulus tes kebhinekaan sebagai salah satu langkah dalam proses pendaftaran."
+            ]
+        },
+        {
+            "tag": "requirement",
+            "patterns": [
+                "Apakah ada syarat khusus untuk mengikuti program?",
+                "syarat"
+            ],
+            "responses": [
+                "Untuk dapat mengikuti program Orbit Kampus 'AI 4 Jobs', ada beberapa persyaratan yang perlu dipenuhi. Pertama, Anda perlu memiliki laptop atau komputer dengan spesifikasi minimal, termasuk chipset Intel i3 atau Ryzen 3, RAM 4GB, dan storage 500GB, serta dilengkapi dengan webcam, speaker, dan microphone. Kedua, pastikan Anda memiliki koneksi internet yang stabil. Selanjutnya, siapkan dokumen SPTJM dan SurKom sesuai format yang ditentukan, dan unggahnya ke platform MSIB. Hanya mahasiswa semester 4 hingga 7 dari perguruan tinggi di bawah Kemendikbudristek dengan IPK minimum 2.9 dari prodi atau jurusan apapun yang memenuhi syarat. Daftarkan diri Anda di platform MSIB dan pilih mitra 'Orbit Kampus 'AI 4 Jobs’. Terakhir, Anda juga perlu lulus tes kebhinekaan sebagai salah satu langkah dalam proses pendaftaran."
+            ]
+        },
+        {
+            "tag": "master_programming",
+            "patterns": [
+                "Apakah saya harus menguasai pemrograman lebih dulu?",
+                "bisa coding"
+            ],
+            "responses": [
+                "Program ini dibuka untuk mahasiswa dari semua prodi atau jurusan. Peserta tidak diwajibkan menguasai pemrograman (coding) lebih dulu. Jangan khawatir, materi pemrograman akan diajarkan dari yang paling dasar oleh coach."
+            ]
+        },
+        {
+            "tag": "event_duration",
+            "patterns": [
+                "Berapa lama program berlangsung?",
+                "sampai kapan?"
+            ],
+            "responses": [
+                "Program berlangsung selama 5 bulan. Mulai tanggal 14 Agustus 2023 sampai 14 Januari 2024."
+            ]
+        },
+        {
+            "tag": "specification",
+            "patterns": [
+                "Apakah ada spesifikasi minimal laptop atau komputer?",
+                "spec"
+            ],
+            "responses": [
+                "Spesifikasi minimal laptop/komputer yang kami rekomendasikan adalah: Prosesor Intel i3 atau Ryzen 3, RAM 4GB, HDD/SSD 500GB."
+            ]
+        },
+        {
+            "tag": "special_software",
+            "patterns": [
+                "Apakah ada software/aplikasi khusus yang harus diinstal?",
+                "software",
+                "aplikasi",
+                "program"
+            ],
+            "responses": [
+                "Tidak ada software/aplikasi khusus yang harus diinstal lebih dulu. Peserta cukup menginstal aplikasi Zoom untuk mengikuti kelas."
+            ]
+        },
+        {
+            "tag": "pocket_money",
+            "patterns": [
+                "Apakah akan mendapat uang saku?"
+            ],
+            "responses": [
+                "Peserta program tidak akan mendapat uang saku. Tetapi akan ada Biaya Bantuan Hidup (BBH) dan uang pulsa sebesar Rp1.000.000 (satu juta rupiah)."
+            ]
+        },
+        {
+            "tag": "internet_money",
+            "patterns": [
+                "Apakah akan mendapat uang pulsa?"
+            ],
+            "responses": [
+                "Peserta program mendapat Biaya Bantuan Hidup (BBH) dan uang pulsa sebesar Rp1.000.000 (satu juta rupiah)."
+            ]
+        },
+        {
+            "tag": "benefit",
+            "patterns": [
+                "Apa yang saya dapatkan setelah mengikuti program?"
+            ],
+            "responses": [
+                "Di akhir program, peserta akan diberikan sejumlah manfaat, termasuk kesempatan untuk terhubung dengan pekerjaan melalui Job Connector, kesempatan untuk bekerja pada Proyek Akhir yang relevan, serta Daftar Hasil Studi (DHS) yang mencatat prestasi mereka selama program. Selain itu, peserta juga akan menerima Sertifikat Keikutsertaan sebagai pengakuan atas partisipasi mereka dalam program tersebut."
+            ]
+        },
+        {
+            "tag": "pass_program",
+            "patterns": [
+                "Apa kriteria atau standar kelulusan program?"
+            ],
+            "responses": [
+                "Standar kelulusan program mirip seperti kuliah, yakni: peserta mampu mengikuti kelas dengan baik (presensi), peserta mampu mengerjakan semua tugas yang diberikan, peserta mampu mengerjakan posttest (ujian), peserta mampu menyelesaikan Proyek Akhir dan Laporan Akhir."
+            ]
+        },
+        {
+            "tag": "convertion",
+            "patterns": [
+                "Bagaimana mekanisme konversi nilai?"
+            ],
+            "responses": [
+                "Mekanisme konversi mengikuti kebijakan perguruan tinggi peserta."
+            ]
+        },
+        {
+            "tag": "intern",
+            "patterns": [
+                "Apakah mahasiswa boleh melakukan magang atau kegiatan lain ketika mengikuti Orbit Kampus?"
+            ],
+            "responses": [
+                "Mohon maaf, berdasarkan peraturan MSIB, mahasiswa yang mengikuti program Studi Independen tidak bisa mengikuti magang atau melakukan kegiatan lain di luar program."
+            ]
+        },
+        {
+            "tag": "study_system",
+            "patterns": [
+                "Bagaimana sistem belajar pada program ini?"
+            ],
+            "responses": [
+                "Program ini terdiri dari tiga fase belajar: Self-Study, Kelas Online, dan Pengerjaan PA. Peserta akan belajar mandiri, berpartisipasi dalam sesi online, dan mengaplikasikan pengetahuan dalam proyek praktis."
+            ]
+        },
+        {
+            "tag": "self_study",
+            "patterns": [
+                "Apakah Orbit menyediakan materi yang bisa dipelajari student pada fase Self-Study?"
+            ],
+            "responses": [
+                "Kami menyediakan materi yang bisa student pelajari selama fase self-study. Materi ini bisa diakses melalui website OrbitGuru."
+            ]
+        },
+        {
+            "tag": "online_offline",
+            "patterns": [
+                "Apakah kelasnya offline atau online?"
+            ],
+            "responses": [
+                "Kelas diadakan full online."
+            ]
+        },
+        {
+            "tag": "online_mechanism",
+            "patterns": [
+                "Bagaimana mekanisme kelas online pada program ini?"
+            ],
+            "responses": [
+                "Setiap kelas akan dibimbing dan didampingi oleh satu Homeroom Coach (Wali Kelas)."
+            ]
+        }
+    ]
+}
