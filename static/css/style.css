@@ -21,7 +21,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   background-image: var(--body-bg);
   font-family: Helvetica, sans-serif;
 }
@@ -32,8 +32,7 @@ html {
   justify-content: space-between;
   width: 100%;
   max-width: 867px;
-  margin: 25px 10px;
-  height: calc(100% - 50px);
+  height: calc(90% - 50px);
   background: var(--msger-bg);
   box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
 }
